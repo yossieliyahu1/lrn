@@ -1,0 +1,106 @@
+﻿<VAST version="3.0">
+
+	<Error>
+		<!-- a URI to a tracking resource that the video player should request upon receiving a
+“no ad” response-->
+	</Error>
+
+	<AD>
+		<InLine>
+			<!-- the actual ad -->
+			<Error>
+				<!-- enables the video player to provide feedback to ad servers when an Ad cannot be served. -->
+				<![CDATA[ http://adserver.com/error.gif?ERRORCODE=[] ]]>
+			</Error>
+			<AdSystem>
+				<!-- name of the ad server that returned the ad -->
+			</AdSystem>
+			<AdTitle>
+				<!-- the common name of the ad-->
+			</AdTitle>
+			<Impression>
+				<!-- a URI that directs the video player to a tracking resource file that the video player
+should request when the first frame of the ad is displayed-->
+			</Impression>
+			<Creatives>
+				<!-- 
+					the container for one or more <Creative> elements
+				-->
+				<Creative>
+					<!-- details about the files for each creative to be included as part of the ad experience -->
+					<Linear>
+					<!-- for skipable ads: <Linear skipoffset="00:00:05"></Linear> -->
+						<Duration>00:00:30</Duration>
+						<MediaFiles>
+							<MediaFile delivery="http or streaming" 
+									   type="mime-type like video/x-flv"
+										width="40" height="40"
+										><![CDATA[ media URI ]]></MediaFile>
+						</MediaFiles>
+						<VideoClicks>
+							<!-- element, which is used to specify what the video player should do 
+						if the user clicks directly within the video player frame while the ad is being 
+									displayed. -->
+
+							<ClickThrough>
+								<!--The clickthrough URI provided is for the video player to open in a new web 
+									browser window when the user clicks the ad.-->
+							</ClickThrough>
+							<ClickTracking><!-- click tracking URI --></ClickTracking>
+						</VideoClicks>
+					</Linear>
+					<!-- or -->
+					<NonLinear></NonLinear>
+					<!-- or -->
+					<CompanionAds></CompanionAds>
+				</Creative>
+				<Creative>
+					<!-- details about the files for each creative to be included as part of the ad experience -->
+				</Creative>
+
+				<Creative>
+					<!-- companion ad type creative -->
+					<CompanionAds required="all">
+						<Companion id="1">
+							<StaticResource type="image/jpg"><![CDATA[ http://AdServer.com/companion1.jpg]]></StaticResource>
+							<HTMLResource>
+								<![CDATA[http://AdServer.com/companion1.html]]>
+							</HTMLResource>
+						</Companion>
+						<Companion id="2">
+							<StaticResource type="image/jpg">
+								<![CDATA[http://AdServer.com/companion2.jpg]]>
+							</StaticResource>
+							<HTMLResource>
+								<![CDATA[http://AdServer.com/companion2.html]]>
+							</HTMLResource>
+						</Companion>
+					</CompanionAds>
+				</Creative>
+			
+			</Creatives>
+
+		    <!-- optional inline elements 
+			
+			<Description>
+			<Advertiser>
+			<Pricing>
+			<Error> contains a URI to a tracking resource that the video player should request if for some reason
+the InLine ad could not be served
+			
+			-->
+
+			<TrackingEvents></TrackingEvents>
+			<VideoClicks></VideoClicks>
+		</InLine>
+		<!-- or -->
+		<Wrapper>
+			<!-- ref another server -->
+		</Wrapper>
+	</AD>
+     
+	 <!-- 
+	[optional .. more ads ]
+	-->
+
+</VAST>

@@ -1,0 +1,170 @@
+html {
+	color: darkslategray;
+	background-color: #fffefd;
+}
+
+.container, .container-fluid {
+	padding:0;
+}
+
+.align-right {
+	text-align:right;
+}
+
+.row {
+	padding:0;
+	margin:0;
+}
+
+.col-md-12 {
+	padding:0;
+	margin:0;
+}
+
+/******************************************* TopBar *******************************************/
+
+#topbar .tbh {
+	height:60px;
+}
+
+#topbar .hello-label {
+	font-size:24px;
+	color: #808080;
+	margin: 15px 0 0 20px;
+}
+
+#topbar .edit-label {
+	color: #808080;
+	font-size:14px;
+	margin: 15px 0 0 20px;
+}
+
+#topbar .link {
+	margin-top:5px;
+}
+
+#topbar .link a{
+	margin-right:15px;
+}
+
+/******************************************* Content *******************************************/
+
+#cntnt .main {
+	margin-top:90px;
+	padding:0;
+	margin:0;
+}
+
+/******************************************* Content *******************************************/
+
+#editPanel {
+	padding:10px 0 0 0;
+}
+
+#editPanel .btnWrp {
+}
+
+#editPanel .fl {
+	float:left;
+	height:25px;
+
+	color: #808080;
+	font-size:14px;
+}
+
+/******************************************* UserDetails *******************************************/
+
+#user-details form {
+	margin-top:100px;
+}
+
+#user-details .input-top-margin {
+	margin-top:20px;
+}
+
+/******************************************* Square *******************************************/
+
+#square .wrpr{
+	padding:50px;
+}
+
+#square .imgs {
+	cursor : pointer;
+	width:250px;
+	height:200px;
+	overflow:hidden;
+}
+
+#square .txt {
+	cursor : pointer;
+	color: #808080;
+	font-size:18px;
+	margin-top:20px;
+}
+
+/******************************************* AddNewSquare *******************************************/
+
+#newSquare {
+	width:250px;
+	height:200px;
+	border:1px dotted #808080;
+	color:#808080;
+	float:left;
+	margin:50px;
+	cursor:pointer;
+}
+
+#newSquare .txt {
+	font-size:38px;
+	padding:30px;
+}
+
+/******************************************* Login *******************************************/
+
+#login {
+	color: #808080;
+	font-size:14px;
+}
+
+#login .lh {
+	height:60px;
+}
+
+#login input {
+	height:30px;
+}
+
+#login button {
+	padding-top:3px;
+	margin-right:2px;
+	color: #808080;
+	font-size:14px;
+	height:30px;
+}
+
+#login .form-msg {
+	padding-top:5px;
+}
+
+#login .no-right-pad {
+	padding-right:0px;
+}
+
+#login .small-left-pad {
+	padding-left:2px;
+}
+
+#login .form-wrp {
+	height : 40px;
+	padding-top:20px;
+}
+
+#login .btnWrp {
+
+}
+
+#login .fl {
+	
+	float:left;
+	height:30px;
+}

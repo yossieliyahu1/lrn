@@ -1,0 +1,16 @@
+html {
+	color: darkslategray;
+	background-color: #fffefd;
+}
+
+body {
+	padding-top: 3rem;
+}
+
+
+/***************************************************************/
+.square {
+	width:200px;
+	height:200px;
+	border:1px solid red;
+}
